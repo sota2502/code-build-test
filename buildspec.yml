@@ -8,5 +8,6 @@ phases:
     commands:
       - echo Build started on `date`
       - printenv
-      - which docker
-        # - 'curl -X POST --data-urlencode "payload={\"channel\": \"#times_sotanakamori\", \"username\": \"codebuild\", \"text\": \"@souta.nakamori Complete\", \"icon_emoji\": \":done:\"}" https://hooks.slack.com/services/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'
+      - which aws
+      - aws --version
+      - docker build -t codebuldtest .
